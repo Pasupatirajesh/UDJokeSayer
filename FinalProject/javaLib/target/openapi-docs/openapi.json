@@ -1,0 +1,43 @@
+{
+ "swagger": "2.0",
+ "info": {
+  "version": "1.0.0",
+  "title": "numeric-cinema-184003.appspot.com"
+ },
+ "host": "numeric-cinema-184003.appspot.com",
+ "basePath": "/_ah/api",
+ "schemes": [
+  "https"
+ ],
+ "consumes": [
+  "application/json"
+ ],
+ "produces": [
+  "application/json"
+ ],
+ "paths": {
+  "/myApi/v1/sayJoke": {
+   "post": {
+    "operationId": "MyApiSayJoke",
+    "parameters": [ ],
+    "responses": {
+     "200": {
+      "description": "A successful response",
+      "schema": {
+       "$ref": "#/definitions/JokeSayer"
+      }
+     }
+    }
+   }
+  }
+ },
+ "definitions": {
+  "JokeSayer": {
+   "properties": {
+    "joke": {
+     "type": "string"
+    }
+   }
+  }
+ }
+}
